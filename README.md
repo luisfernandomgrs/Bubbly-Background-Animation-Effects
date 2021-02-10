@@ -7,3 +7,6 @@
   https://www.youtube.com/watch?v=uaRaCvd3byY
 </code>
 
+<h2>Confira o projeto aqui, ;)</h2>
+
+https://luisfernandomgrs.github.io/Bubbly-Background-Animation-Effects/
