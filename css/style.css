@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #000;
+
+    /*
+    // não será o suficiente, e precisaremos de definir
+    // heith: 100vh  ao invés de heith: 100% 
+    */
+    overflow: hidden; 
+}
+
+.container span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+
+.container span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover; /* contain; */
+    background-attachment: fixed;
+    transition: 5s;
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.container span:hover::before {
+    width: 850%;
+    height: 850%;
+    transition: 0s;
+    opacity: 1;
+}
+
